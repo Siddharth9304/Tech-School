@@ -227,7 +227,7 @@ section{
     }
     .container{
         height: auto;
-        display: block;
+        grid-template-columns: 1fr;
     }
     .content{
         overflow-y: auto;
