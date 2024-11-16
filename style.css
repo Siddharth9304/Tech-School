@@ -254,6 +254,21 @@ main{
     border-radius: 10px;
 }
 
+.img{
+    position: relative;
+}
+
+.quizBanner{
+    position: absolute;
+    color: white;
+    background-color: rgba(67, 129, 252, 0.489);
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0.3vw 0.6vw;
+    padding-right: 2vw;
+    top: 12px;
+}
+
 .cFirst, .qFirst{
     font-size: 18px;
 }
@@ -605,7 +620,11 @@ header{
     .contactForm{
         width: 70vw;
     }
+    .quotes{
+        width: 70vw;
+    }
 }
+
 
 
 
