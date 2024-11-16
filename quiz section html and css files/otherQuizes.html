@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styleQuiz.css">
+    <style>
+        main{
+            padding-top: 50px;
+            text-align: center;
+            padding-bottom: 50px;
+        }
+        main > p{
+            margin: 10px;
+            font-size: 20px;
+            color: rgb(250, 76, 76);
+        }
+        h2{
+           margin-top: 35px;
+           font-size: 30px;
+        }
+        .quizContent, .learnContent{
+            display: flex;
+            margin-top: 10px;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+        .cardLearn, .cardQuiz{
+            box-sizing: content-box;
+            width: 200px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            cursor: pointer;
+            border-radius: 10px;
+            padding: 10px; 
+        }
+        .cImage, .qImage{
+            width: 200px;
+            height: 200px;
+            border-radius: 10px;
+        }
+        .img{
+            position: relative;
+        }
+
+        .quizBanner{
+            position: absolute;
+            color: white;
+            background-color: rgba(67, 129, 252, 0.489);
+            font-size: 20px;
+            font-weight: bold;
+            padding: 0.3vw 0.6vw;
+            padding-right: 2vw;
+            top: 12px;
+        }
+        .cFirst, .qFirst{
+            font-size: 18px;
+        }
+        .cSecond, .qSecond{
+            font-size: 15px;
+        }
+        .cThird, .qThird{
+            font-size: 18px;
+            color: white;
+            font-weight: bold;
+        }
+        .cardLearn:hover, .cardQuiz:hover{
+            background-color: #383838;
+        }
+
+    </style>
+</head>
+<body>
+     <!-- header -->
+     <header>
+
+        <h1>Tech School</h1>
+
+        <div id="navigation">
+
+            <input class="menu-btn" type="checkbox" id="menu-btn" name="menu-btn" />
+            <label class="menu-icon open" for="menu-btn">
+                <span>&#9776;</span>
+            </label>
+
+            <label class="menu-icon close" for="menu-btn">
+                <span>&#10005;</span>
+            </label>
+
+            <!-- navBar -->
+            <div class="navBar">
+                <a href="../index.html#Home"><button>Home</button></a>
+                <a href="../index.html#programmingLanguage"><button>Learn</button></a>
+                <a href="../index.html#programmingLanguageQuiz"><button>Quiz</button></a>
+                <a href="../index.html#contact"><button>Contact</button></a>
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- main -->
+    <main>
+        <p>We are cuurently working on this quiz</p>
+        <p>Kindly check the completed quizes and courses</p>
+
+        <!-- Quizes -->
+        <h2>Quizes</h2>
+        <div class="quizContent">
+
+             <!-- quiz 1 c language  -->
+             <a href="../quiz section html and css files/c_quiz.html"><div class="cardQuiz">
+                <div class="img">
+                    <img class="qImage" src="../images/c-quiz.png" alt="Clanguage">
+                    <div class="quizBanner">Quiz</div>
+                </div>
+                <p class="qFirst">C Language Quiz</p>
+                <p class="qSecond">18 Questions</p>
+            </div></a>
+
+            <!-- quiz 2 c++ language -->
+            <a href="../quiz section html and css files/cplusplus_quiz.html"><div class="cardQuiz">
+                <div class="img">
+                    <img class="qImage" src="../images/c++quiz.png" alt="Clanguage">
+                    <div class="quizBanner">Quiz</div>
+                </div>
+                <p class="qFirst">C++ Language Quiz</p>
+                <p class="qSecond">18 Questions</p>
+            </div></a>
+
+            <!-- quiz 3 java language -->
+            <a href="../quiz section html and css files/java_quiz.html"><div class="cardQuiz">
+                <div class="img">
+                    <img class="qImage" src="../images/javaquiz.png" alt="Clanguage">
+                    <div class="quizBanner">Quiz</div>
+                </div>
+                <p class="qFirst">Java Quiz</p>
+                <p class="qSecond">18 Question</p>
+            </div></a>
+
+        </div>
+
+        <!-- Learn -->
+        <h2>Learn</h2>
+        <div class="learnContent">
+
+            <!-- course 1 Learn C language -->
+            <a href="./learn_c_language.html">
+                <div class="cardLearn">
+                    <img class="cImage" src="../images/C_language.jpg" alt="Clanguage">
+                    <p class="cFirst">Learn C language</p>
+                    <p class="cSecond">11 topics</p>
+                </div>
+            </a>
+
+            <!-- course 2 Learn C++ language -->
+            <a href=".learn_cplusplus.html">
+            <div class="cardLearn">
+                <img class="cImage" src="../images/c++.avif" alt="Clanguage">
+                <p class="cFirst">Learn C++ language</p>
+                <p class="cSecond">11 topics</p>
+            </div>
+            </a>
+
+            <!-- course 3 Learn Java Language -->
+            <a href="./learn_java.html">
+            <div class="cardLearn">
+                <img class="cImage" src="../images/java.jpg" alt="Clanguage">
+                <p class="cFirst">Learn Java Language</p>
+                <p class="cSecond">11 topics</p>
+            </div>
+            </a>
+        </div>
+    </main>
+    
+</body>
+</html>
