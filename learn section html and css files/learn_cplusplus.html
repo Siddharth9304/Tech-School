@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn C Language</title>
+    <!-- <link rel="stylesheet" href="./style.css"> -->
+     <link rel="stylesheet" href="./styleLearn.css">
+</head>
+<body>
+    <header>
+        <h1>Tech School</h1>
+        <div id="navigation">
+            <input class="menu-btn" type="checkbox" id="menu-btn" name="menu-btn" />
+            <label class="menu-icon open" for="menu-btn">
+                <span>&#9776;</span>
+            </label>
+            <label class="menu-icon close" for="menu-btn">
+                <span>&#10005;</span>
+            </label>
+            <div class="navBar">
+                <a href="../index.html#Home"><button>Home</button></a>
+                <a href="../index.html#programmingLanguage"><button>Learn</button></a>
+                <a href="../index.html#programmingLanguageQuiz"><button>Quiz</button></a>
+                <a href="../index.html#contact"><button>Contact</button></a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <!-- navBar -->
+            <div class="scrollTopics">
+                <h6>Topics</h6>
+                <a href="#cpp-introduction"><p>Introduction</p></a>
+                <a href="#cpp-setup"><p>Setting Up Environment</p></a>
+                <a href="#cpp-syntax"><p>Basic Syntax</p></a>
+                <a href="#cpp-operators"><p>Operators</p></a>
+                <a href="#cpp-control"><p>Control Structures</p></a>
+                <a href="#cpp-functions"><p>Functions</p></a>
+                <a href="#cpp-classes"><p>Classes and Objects</p></a>
+                <a href="#cpp-inheritance"><p>Inheritance</p></a>
+                <a href="#cpp-polymorphism"><p>Polymorphism</p></a>
+                <a href="#cpp-file-handling"><p>File Handling</p></a>
+                <a href="#cpp-projects"><p>Projects</p></a>
+            </div>
+            <div class="content">
+                <!-- Section 1: Introduction to C++ -->
+                <section id="cpp-introduction" class="dark">
+                    <h2>1. Introduction to C++</h2>
+                    <p><strong>What is C++?</strong></p>
+                    <p>C++ is a versatile programming language that builds upon C by adding object-oriented programming capabilities. Created by Bjarne Stroustrup in 1979, C++ is widely used in software development, game development, and competitive programming.</p>
+                    <p><strong>Key Characteristics of C++</strong></p>
+                    <ul>
+                        <li><strong>Object-Oriented</strong>: Supports classes, inheritance, and polymorphism.</li>
+                        <li><strong>Compiled Language</strong>: Known for high performance and extensive control over system resources.</li>
+                        <li><strong>Standard Library</strong>: Offers a rich set of libraries and templates.</li>
+                    </ul>
+                </section>
+        
+                <!-- Section 2: Setting Up the Environment -->
+                <section id="cpp-setup" class="light">
+                    <h2>2. Setting Up the Environment</h2>
+                    <p><strong>Installing a C++ Compiler</strong></p>
+                    <ul>
+                        <li><strong>G++ (GNU C++ Compiler)</strong>: Compatible with Linux, macOS, and Windows.</li>
+                        <li><strong>Microsoft Visual Studio</strong>: An integrated development environment for Windows users.</li>
+                    </ul>
+                    <p><strong>Writing Your First Program</strong></p>
+                    <pre><code>#include &lt;iostream&gt;
+        
+        int main() {
+            std::cout << "Hello, World!" << std::endl;
+            return 0;
+        }</code></pre>
+                </section>
+        
+                <!-- Section 3: Basic Syntax and Structure -->
+                <section id="cpp-syntax" class="dark">
+                    <h2>3. Basic Syntax and Structure</h2>
+                    <p><strong>Structure of a C++ Program</strong>: C++ programs typically include header files, the main function, and statements.</p>
+                    <p><strong>Data Types in C++</strong></p>
+                    <ul>
+                        <li><strong>int</strong>: Integer values</li>
+                        <li><strong>float</strong>: Single-precision floating-point numbers</li>
+                        <li><strong>double</strong>: Double-precision floating-point numbers</li>
+                        <li><strong>char</strong>: Single character</li>
+                        <li><strong>bool</strong>: Boolean values (true or false)</li>
+                    </ul>
+                </section>
+        
+                <!-- Section 4: Operators in C++ -->
+                <section id="cpp-operators" class="light">
+                    <h2>4. Operators in C++</h2>
+                    <p><strong>Arithmetic Operators</strong>: +, -, *, /, %</p>
+                    <p><strong>Relational and Logical Operators</strong></p>
+                    <ul>
+                        <li><strong>Relational</strong>: ==, !=, &lt;, &gt;, &lt;=, &gt;=</li>
+                        <li><strong>Logical</strong>: && (AND), || (OR), ! (NOT)</li>
+                    </ul>
+                </section>
+        
+                <!-- Section 5: Control Structures -->
+                <section id="cpp-control" class="dark">
+                    <h2>5. Control Structures</h2>
+                    <p><strong>Conditional Statements</strong>: if, else if, else, switch</p>
+                    <p><strong>Looping Structures</strong>: for, while, do-while</p>
+                </section>
+        
+                <!-- Section 6: Functions in C++ -->
+                <section id="cpp-functions" class="light">
+                    <h2>6. Functions in C++</h2>
+                    <p><strong>Defining and Using Functions</strong></p>
+                    <pre><code>int add(int a, int b) {
+            return a + b;
+        }</code></pre>
+                    <p><strong>Function Overloading</strong>: Allows multiple functions with the same name but different parameter lists.</p>
+                </section>
+        
+                <!-- Section 7: Classes and Objects -->
+                <section id="cpp-classes" class="dark">
+                    <h2>7. Classes and Objects</h2>
+                    <p><strong>Creating Classes</strong>: Classes represent user-defined data types.</p>
+                    <p><strong>Access Modifiers</strong>: public, private, and protected</p>
+                </section>
+        
+                <!-- Section 8: Inheritance -->
+                <section id="cpp-inheritance" class="light">
+                    <h2>8. Inheritance</h2>
+                    <p><strong>Single and Multiple Inheritance</strong>: Enables code reuse by allowing derived classes to inherit properties from base classes.</p>
+                </section>
+        
+                <!-- Section 9: Polymorphism -->
+                <section id="cpp-polymorphism" class="dark">
+                    <h2>9. Polymorphism</h2>
+                    <p><strong>Compile-time Polymorphism</strong>: Achieved via function and operator overloading.</p>
+                    <p><strong>Runtime Polymorphism</strong>: Achieved using inheritance and virtual functions.</p>
+                </section>
+        
+                <!-- Section 10: File Handling in C++ -->
+                <section id="cpp-file-handling" class="light">
+                    <h2>10. File Handling in C++</h2>
+                    <p><strong>Opening, Reading, Writing Files</strong></p>
+                    <pre><code>#include &lt;fstream&gt;
+        
+        std::ofstream file("example.txt");
+        file << "Writing to a file.\n";
+        file.close();</code></pre>
+                </section>
+        
+                <!-- Section 11: Sample Projects and Exercises -->
+                <section id="cpp-projects" class="dark">
+                    <h2>11. Sample Projects and Exercises</h2>
+                    <p><strong>Mini Projects</strong>: Implement a calculator, student database system</p>
+                    <p><strong>Exercises</strong>: Implement classes for different shapes, inheritance examples, and file operations.</p>
+                </section>
+            </div>
+        </div>
+        
+    </main>
+    <footer>
+        <div id="links">
+            <div class="links programmingLanguage">
+                <h5>Programming Languages</h5>
+                <p>C language</p>
+                <p>C++ Language</p>
+                <p>Java</p>
+                <p>JavaScript</p>
+                <p>Python</p>
+            </div>
+            <div class="links DataStrucure">
+                <h5>Data Strucure</h5>
+                <p>Array</p>
+                <p>String</p>
+                <p>Linked List</p>
+                <p>Stack</p>
+                <p>Queue</p>
+                <p>Tree</p>
+                <p>Graphs</p>
+            </div>
+            <div class="links WebDev">
+                <h5>Web Development</h5>
+                <p>HTML</p>
+                <p>CSS</p>
+                <P>JavaScript</P>
+                <p>React</p>
+            </div>
+        </div>
+        <hr>
+        <div class="allrights">
+            <p>&copy;All rights are reserved by Tech School</p>
+        </div>
+    </footer>
+</body>
+</html>

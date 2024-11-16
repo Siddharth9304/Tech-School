@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn C Language</title>
+   <link rel="stylesheet" href="./styleLearn.css">
+</head>
+<body>
+
+    <!-- header -->
+    <header>
+        <h1>Tech School</h1>
+        <div id="navigation">
+            <input class="menu-btn" type="checkbox" id="menu-btn" name="menu-btn" />
+            <label class="menu-icon open" for="menu-btn">
+                <span>&#9776;</span>
+            </label>
+            <label class="menu-icon close" for="menu-btn">
+                <span>&#10005;</span>
+            </label>
+            <div class="navBar">
+                <a href="../index.html#Home"><button>Home</button></a>
+                <a href="../index.html#programmingLanguage"><button>Learn</button></a>
+                <a href="../index.html#programmingLanguageQuiz"><button>Quiz</button></a>
+                <a href="../index.html#contact"><button>Contact</button></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- main -->
+    <main>
+        <div class="container">
+            <!-- navBar -->
+            <div class="scrollTopics">
+                <h6>Topics</h6>
+                <a href="#introduction"><p>Introduction</p></a>
+                <a href="#setup"><p>Setting Up Environment</p></a>
+                <a href="#syntax"><p>Basic Syntax</p></a>
+                <a href="#operators"><p>Operators</p></a>
+                <a href="#control"><p>Control Structures</p></a>
+                <a href="#functions"><p>Functions</p></a>
+                <a href="#arrays"><p>Arrays</p></a>
+                <a href="#pointers"><p>Pointers</p></a>
+               <a href="#structures"><p>Structures and Unions</p></a>
+                <a href="#file-handling"><p>File Handling</p></a>
+                <a href="#projects"><p>Projects</p></a>
+            </div>
+            <div class="content">
+                <!-- Section 1: Introduction to C Language -->
+                <section id="introduction" class="dark">
+                    <h2>1. Introduction to C Language</h2>
+                    <p><strong>What is C Language?</strong></p>
+                    <p>C is a powerful general-purpose programming language, originally developed by Dennis Ritchie between 1969 and 1973. Known for its simplicity, speed, and flexibility, C provides foundational knowledge for understanding more complex programming languages.</p>
+                    <p><strong>Key Characteristics of C</strong></p>
+                    <ul>
+                        <li><strong>Portability</strong>: C code can be executed on different machines with minimal modification.</li>
+                        <li><strong>Efficiency</strong>: Ideal for system programming and performance-critical applications.</li>
+                        <li><strong>Low-Level Operations</strong>: Direct memory manipulation via pointers makes it suitable for OS development and hardware-level programming.</li>
+                    </ul>
+                    <p><strong>Why Learn C?</strong> Provides insight into how computers function at a hardware level and serves as a stepping stone for learning languages like C++, Java, and Python.</p>
+                </section>
+
+                <!-- Section 2: Setting Up the Environment -->
+                <section id="setup" class="light">
+                    <h2>2. Setting Up the Environment</h2>
+                    <p><strong>Choosing and Installing a C Compiler</strong></p>
+                    <ul>
+                        <li><strong>GCC (GNU Compiler Collection)</strong>: Available for Linux, macOS, and Windows.</li>
+                    </ul>
+                    <p><strong>Writing and Running Your First Program</strong></p>
+                    <pre><code>#include &lt;stdio.h&gt;
+
+        int main() {
+            printf("Hello, World!\n");
+            return 0;
+        }</code></pre>
+                </section>
+
+                <!-- Section 3: Basic Syntax and Structure -->
+                <section id="syntax" class="dark">
+                    <h2>3. Basic Syntax and Structure</h2>
+                    <p><strong>Structure of a C Program</strong>: Includes preprocessor directives, the main function, and statements that end with a semicolon.</p>
+                    <p><strong>Data Types in C</strong></p>
+                    <ul>
+                        <li><strong>int</strong>: Integer values</li>
+                        <li><strong>float</strong>: Single-precision floating-point numbers</li>
+                        <li><strong>double</strong>: Double-precision floating-point numbers</li>
+                        <li><strong>char</strong>: Single character</li>
+                    </ul>
+                </section>
+
+                <!-- Section 4: Operators and Expressions -->
+                <section id="operators" class="light">
+                    <h2>4. Operators and Expressions</h2>
+                    <p><strong>Arithmetic Operators</strong>: +, -, *, /, %</p>
+                    <p><strong>Relational and Logical Operators</strong></p>
+                    <ul>
+                        <li><strong>Relational</strong>: ==, !=, &lt;, &gt;, &lt;=, &gt;=</li>
+                        <li><strong>Logical</strong>: && (AND), || (OR), ! (NOT)</li>
+                    </ul>
+                </section>
+
+                <!-- Section 5: Control Structures -->
+                <section id="control" class="dark">
+                    <h2>5. Control Structures</h2>
+                    <p><strong>Conditional Statements</strong>: if, else if, else, switch</p>
+                    <p><strong>Looping Structures</strong>: for, while, do-while</p>
+                </section>
+
+                <!-- Section 6: Functions in C -->
+                <section id="functions" class="light">
+                    <h2>6. Functions in C</h2>
+                    <p><strong>Defining and Using Functions</strong></p>
+                    <pre><code>int add(int a, int b) {
+            return a + b;
+        }</code></pre>
+                    <p><strong>Function Types</strong>: Standard Library Functions and User-Defined Functions</p>
+                </section>
+
+                <!-- Section 7: Arrays and Strings -->
+                <section id="arrays" class="dark">
+                    <h2>7. Arrays and Strings</h2>
+                    <p><strong>Arrays in C</strong>: An array holds multiple values of the same data type.</p>
+                    <p><strong>Strings in C</strong>: Arrays of characters ending with a null character \0.</p>
+                </section>
+
+                <!-- Section 8: Pointers and Memory Management -->
+                <section id="pointers" class="light">
+                    <h2>8. Pointers and Memory Management</h2>
+                    <p><strong>Understanding Pointers</strong>: A pointer is a variable that stores the address of another variable.</p>
+                    <p><strong>Dynamic Memory Allocation</strong></p>
+                    <pre><code>int *arr = (int*)malloc(5 * sizeof(int));
+        free(arr);</code></pre>
+                </section>
+
+                <!-- Section 9: Structures and Unions -->
+                <section id="structures" class="dark">
+                    <h2>9. Structures and Unions</h2>
+                    <p><strong>Using Structures</strong>: Structures group different data types under one name.</p>
+                    <p><strong>Unions</strong>: All members share the same memory.</p>
+                </section>
+
+                <!-- Section 10: File Handling -->
+                <section id="file-handling" class="light">
+                    <h2>10. File Handling</h2>
+                    <p><strong>File I/O Operations</strong>: Opening, reading, writing, and closing files.</p>
+                    <pre><code>fopen("file.txt", "r");
+        fclose(file);</code></pre>
+                </section>
+
+                <!-- Section 11: Sample Projects and Exercises -->
+                <section id="projects" class="dark">
+                    <h2>11. Sample Projects and Exercises</h2>
+                    <p><strong>Mini Projects</strong>: Calculator, To-Do List</p>
+                    <p><strong>Exercises</strong>: Implement linked lists, sorting algorithms, and file manipulation tasks.</p>
+                </section>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div id="links">
+            <div class="links programmingLanguage">
+                <h5>Programming Languages</h5>
+                <p>C language</p>
+                <p>C++ Language</p>
+                <p>Java</p>
+                <p>JavaScript</p>
+                <p>Python</p>
+            </div>
+            <div class="links DataStrucure">
+                <h5>Data Strucure</h5>
+                <p>Array</p>
+                <p>String</p>
+                <p>Linked List</p>
+                <p>Stack</p>
+                <p>Queue</p>
+                <p>Tree</p>
+                <p>Graphs</p>
+            </div>
+            <div class="links WebDev">
+                <h5>Web Development</h5>
+                <p>HTML</p>
+                <p>CSS</p>
+                <P>JavaScript</P>
+                <p>React</p>
+            </div>
+        </div>
+        <hr>
+        <div class="allrights">
+            <p>&copy;All rights are reserved by Tech School</p>
+        </div>
+    </footer>
+</body>
+</html>

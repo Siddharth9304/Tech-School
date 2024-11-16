@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn C Language</title>
+    <!-- <link rel="stylesheet" href="./style.css"> -->
+     <link rel="stylesheet" href="./styleLearn.css">
+</head>
+<body>
+    <header>
+        <h1>Tech School</h1>
+        <div id="navigation">
+            <input class="menu-btn" type="checkbox" id="menu-btn" name="menu-btn" />
+            <label class="menu-icon open" for="menu-btn">
+                <span>&#9776;</span>
+            </label>
+            <label class="menu-icon close" for="menu-btn">
+                <span>&#10005;</span>
+            </label>
+            <div class="navBar">
+                <a href="../index.html#Home"><button>Home</button></a>
+                <a href="../index.html#programmingLanguage"><button>Learn</button></a>
+                <a href="../index.html#programmingLanguageQuiz"><button>Quiz</button></a>
+                <a href="../index.html#contact"><button>Contact</button></a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <!-- navBar -->
+            <div class="scrollTopics">
+                <h6>Topics</h6>
+                <a href="#introduction"><p>Introduction</p></a>
+                <a href="#setup"><p>Setting Up Environment</p></a>
+                <a href="#syntax"><p>Basic Syntax</p></a>
+                <a href="#data-types"><p>Data Types</p></a>
+                <a href="#control"><p>Control Structures</p></a>
+                <a href="#methods"><p>Methods</p></a>
+                <a href="#arrays"><p>Arrays</p></a>
+                <a href="#oop"><p>Oop</p></a>
+                <a href="#exceptions"><p>Exception Handling</p></a>
+                <a href="#file-handling"><p>File Handling</p></a>
+                <a href="#projects"><p>Projects</p></a>
+            </div>
+            <div class="content">
+                <!-- Section 1: Introduction to Java -->
+                <section id="introduction" class="dark">
+                    <h2>1. Introduction to Java</h2>
+                    <p><strong>What is Java?</strong></p>
+                    <p>Java is a high-level, class-based, object-oriented programming language, widely used for web and mobile applications. It was developed by Sun Microsystems in 1995 and is platform-independent.</p>
+                    <p><strong>Key Characteristics of Java</strong></p>
+                    <ul>
+                        <li><strong>Platform Independence</strong>: Write once, run anywhere with the Java Virtual Machine (JVM).</li>
+                        <li><strong>Object-Oriented</strong>: Follows principles like inheritance, encapsulation, and polymorphism.</li>
+                        <li><strong>Robust and Secure</strong>: Strong memory management and built-in security features.</li>
+                    </ul>
+                    <p><strong>Why Learn Java?</strong> It is versatile, used in multiple industries, and foundational for understanding other programming languages and concepts.</p>
+                </section>
+        
+                <!-- Section 2: Setting Up Environment -->
+                <section id="setup" class="light">
+                    <h2>2. Setting Up Environment</h2>
+                    <p><strong>Installing the JDK</strong></p>
+                    <ul>
+                        <li><strong>Java Development Kit (JDK)</strong>: Download and install from the official Oracle website.</li>
+                    </ul>
+                    <p><strong>Writing and Running Your First Program</strong></p>
+                    <pre><code>public class HelloWorld {
+            public static void main(String[] args) {
+                System.out.println("Hello, World!");
+            }
+        }</code></pre>
+                </section>
+        
+                <!-- Section 3: Basic Syntax and Structure -->
+                <section id="syntax" class="dark">
+                    <h2>3. Basic Syntax and Structure</h2>
+                    <p><strong>Structure of a Java Program</strong>: Class definition, main method, and statements within braces.</p>
+                    <p><strong>Basic Keywords</strong>: public, class, static, void, etc.</p>
+                </section>
+        
+                <!-- Section 4: Data Types in Java -->
+                <section id="data-types" class="light">
+                    <h2>4. Data Types in Java</h2>
+                    <p><strong>Primitive Data Types</strong></p>
+                    <ul>
+                        <li><strong>int</strong>: Integer values</li>
+                        <li><strong>float</strong>: Single-precision floating-point numbers</li>
+                        <li><strong>double</strong>: Double-precision floating-point numbers</li>
+                        <li><strong>char</strong>: Single character</li>
+                        <li><strong>boolean</strong>: true or false values</li>
+                    </ul>
+                </section>
+        
+                <!-- Section 5: Control Structures -->
+                <section id="control" class="dark">
+                    <h2>5. Control Structures</h2>
+                    <p><strong>Conditional Statements</strong>: if, else if, else, switch</p>
+                    <p><strong>Looping Structures</strong>: for, while, do-while</p>
+                </section>
+        
+                <!-- Section 6: Methods in Java -->
+                <section id="methods" class="light">
+                    <h2>6. Methods in Java</h2>
+                    <p><strong>Defining and Using Methods</strong></p>
+                    <pre><code>public int add(int a, int b) {
+            return a + b;
+        }</code></pre>
+                    <p><strong>Method Overloading</strong>: Multiple methods with the same name but different parameters.</p>
+                </section>
+        
+                <!-- Section 7: Arrays -->
+                <section id="arrays" class="dark">
+                    <h2>7. Arrays</h2>
+                    <p><strong>Arrays in Java</strong>: A collection of elements of the same data type.</p>
+                    <pre><code>int[] numbers = {1, 2, 3, 4, 5};</code></pre>
+                </section>
+        
+                <!-- Section 8: Object-Oriented Programming (OOP) -->
+                <section id="oop" class="light">
+                    <h2>8. Object-Oriented Programming (OOP)</h2>
+                    <p><strong>Classes and Objects</strong>: Basics of creating objects and using classes.</p>
+                    <p><strong>Inheritance</strong>: Achieving reusability by inheriting from base classes.</p>
+                    <p><strong>Polymorphism, Abstraction, and Encapsulation</strong>: Core principles of OOP.</p>
+                </section>
+        
+                <!-- Section 9: Exception Handling -->
+                <section id="exceptions" class="dark">
+                    <h2>9. Exception Handling</h2>
+                    <p><strong>Introduction to Exceptions</strong>: Handling runtime errors.</p>
+                    <pre><code>try {
+            int result = 10 / 0;
+        } catch (ArithmeticException e) {
+            System.out.println("Cannot divide by zero");
+        }</code></pre>
+                </section>
+        
+                <!-- Section 10: File Handling -->
+                <section id="file-handling" class="light">
+                    <h2>10. File Handling</h2>
+                    <p><strong>File I/O Operations</strong>: Reading and writing files.</p>
+                    <pre><code>File file = new File("file.txt");
+        Scanner reader = new Scanner(file);</code></pre>
+                </section>
+        
+                <!-- Section 11: Sample Projects and Exercises -->
+                <section id="projects" class="dark">
+                    <h2>11. Sample Projects and Exercises</h2>
+                    <p><strong>Mini Projects</strong>: Simple Calculator, Basic Banking System</p>
+                    <p><strong>Exercises</strong>: Implement basic data structures, sorting algorithms, and exception handling tasks.</p>
+                </section>
+            </div>
+        </div>
+        
+        
+    </main>
+    <footer>
+        <div id="links">
+            <div class="links programmingLanguage">
+                <h5>Programming Languages</h5>
+                <p>C language</p>
+                <p>C++ Language</p>
+                <p>Java</p>
+                <p>JavaScript</p>
+                <p>Python</p>
+            </div>
+            <div class="links DataStrucure">
+                <h5>Data Strucure</h5>
+                <p>Array</p>
+                <p>String</p>
+                <p>Linked List</p>
+                <p>Stack</p>
+                <p>Queue</p>
+                <p>Tree</p>
+                <p>Graphs</p>
+            </div>
+            <div class="links WebDev">
+                <h5>Web Development</h5>
+                <p>HTML</p>
+                <p>CSS</p>
+                <P>JavaScript</P>
+                <p>React</p>
+            </div>
+        </div>
+        <hr>
+        <div class="allrights">
+            <p>&copy;All rights are reserved by Tech School</p>
+        </div>
+    </footer>
+</body>
+</html>
