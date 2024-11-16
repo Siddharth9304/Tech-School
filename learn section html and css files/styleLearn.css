@@ -227,7 +227,10 @@ section{
     }
     .container{
         height: auto;
-        grid-template-columns: 1fr;
+        display: block;
+    }
+    .content{
+        overflow-y: auto;
     }
     .scrollTopics{
         display: none;
