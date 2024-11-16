@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech School</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+
+    <!-- header -->
+    <header>
+
+        <!-- Heading Website Name -->
+        <h1>Tech School</h1>
+
+        <!-- navigation Bar -->
+        <div id="navigation">
+
+            <!-- checkbox to implement hamburger -->
+            <input class="menu-btn" type="checkbox" id="menu-btn" name="menu-btn" />
+
+            <!-- hamburger icon -->
+            <label class="menu-icon open" for="menu-btn">
+                <span>&#9776;</span>
+            </label>
+
+            <!-- cross icom -->
+            <label class="menu-icon close" for="menu-btn">
+                <span>&#10005;</span>
+            </label>
+
+            <!-- container to contain navBar buttons -->
+            <div class="navBar">
+
+                <!-- for Section 1 Home -->
+                <a href="#Home"><button>Home</button></a>
+
+                <!-- for Section 2 Learn -->
+                <a href="#programmingLanguage"><button>Learn</button></a>
+
+                <!-- for section 3 Quiz -->
+                <a href="#programmingLanguageQuiz"><button>Quiz</button></a>
+
+                <!-- for section 4 Contact -->
+                <a href="#contact"><button>Contact</button></a>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- main, it contains section 1 Home, Section 2 Learn, Section 3 Quiz and Section 4 Contact-->
+    <main>
+
+        <!-- section 1 Home -->
+        <section id="Home">
+
+            <!-- welcome headings -->
+            <div class="welcome">
+                <h2>Welcome to Programming Learning Hub</h2>
+                <p>Master coding concepts, take fun quizzes, and elevate your skills with our interactive content</p>
+            </div>
+
+            <!-- direct links to learn programming language, data structures, webDev -->
+            <div class="contentInfo">
+                <a href="#programmingLanguage"><h3>Programming Languages</h3></a>|
+                <a href="#dataStructures"><h3>Data Structures and Algorithms</h3></a> |  
+                <a href="#webDev"><h3>Web Development</h3></a>
+            </div>
+
+            <!-- direct links to courses and quizes -->
+            <div class="callToAction">
+
+                <!-- courses -->
+                <div class="startLearningNow">
+                    <a href="#programmingLanguage"><div><img src="./images/StartLearningNow.png" alt="start Learning Now"></div></a>
+                    <p>Explore Courses</p>
+                </div>
+
+                <!-- quizes -->
+                <div class="takeQuiz">
+                    <a href="#programmingLanguageQuiz"><div><img src="./images/Take Quiz.jpg" alt="Take a Quiz"></div></a>
+                    <p>Explore Quizes</p>
+                </div>
+
+            </div>
+
+            <!-- quotes on home page -->
+            <div class="quotes">
+
+                    <!-- quote 1 Mark Zuckerberg -->
+                    <div class="quote quote1">
+                        <p>" The biggest risk is not taking any risk "</p>-
+                        <p>Mark Zuckerberg</p>
+                        <img src="./images/mark zuckerberg.jpg" alt="Mark Zuckerberg">
+                    </div>
+
+                    <!-- quote 2 Bill Gates -->
+                    <div class="quote quote2">
+                        <p>" Vision without execution is daydreaming "</p>-
+                        <p> Bill Gates</p>
+                        <img src="./images/bill gates.webp" alt="Bill Gates">
+                    </div>
+
+                    <!-- quote 3 Sundar Pichai -->
+                    <div class="quote quote3">
+                        <p>" In life don't react, always respond "</p>-
+                        <p> Sundar Pichai</p>
+                        <img src="./images/sundar pichai.png" alt="Sundar Pichai">
+                    </div>
+
+                    <!-- quote 4 Steve Jobs -->
+                    <div class="quote quote4">
+                        <p>" Stay Hungry, Stay Foolish "</p>-
+                        <p> Steve Jobs</p>
+                        <img src="./images/stevejobs.jpg" alt="Steve Jobs">
+                    </div>
+
+            </div> 
+
+        </section>
+
+
+        <!-- section 2 Learn -->
+        <section id="learn">
+
+            <!-- cotainer to contain scrollBar and container containing all the courses -->
+            <div class="learn">
+
+                <!-- container containing all the courses -->
+                <div class="wholeLearningContent">
+
+                    <!-- section 2a programming languages, it contains all the courses -->
+                    <section id="programmingLanguage">
+
+                        <div class="subjectLearn programmingLanguage">
+                            <h3 class="topicLearn">Learn Programing Languages</h3>
+                            <div class="learnContent">
+
+                                <!-- course 1 Learn C language -->
+                                <a href="./learn_c_language.html">
+                                    <div class="cardLearn">
+                                        <img class="cImage" src="./images/C_language.jpg" alt="Clanguage">
+                                        <p class="cFirst">Learn C language</p>
+                                        <p class="cSecond">11 topics</p>
+                                    </div>
+                                </a>
+
+                                <!-- course 2 Learn C++ language -->
+                                <a href="./learn_cplusplus.html">
+                                <div class="cardLearn">
+                                    <img class="cImage" src="./images/c++.avif" alt="Clanguage">
+                                    <p class="cFirst">Learn C++ language</p>
+                                    <p class="cSecond">12 topics</p>
+                                </div>
+                                </a>
+
+                                <!-- course 3 Learn Java Language -->
+                                <a href="./learn_java.html">
+                                <div class="cardLearn">
+                                    <img class="cImage" src="./images/java.jpg" alt="Clanguage">
+                                    <p class="cFirst">Learn Java Language</p>
+                                    <p class="cSecond">15 topics</p>
+                                </div>
+                                </a>
+
+                                <!-- course 3 Learn JavaScript  -->
+                                <a href="./learn_javaScript.html">
+                                <div class="cardLearn">
+                                    <img class="cImage" src="./images/javascript.png" alt="Clanguage">
+                                    <p class="cFirst">Learn C language</p>
+                                    <p class="cSecond">10 topics</p>
+                                </div>
+                                </a>
+
+                                <!-- course 4 Learn Python -->
+                                <a href="./learn_python.html">
+                                <div class="cardLearn">
+                                    <img class="cImage" src="./images/python-programming-language.webp" alt="Clanguage">
+                                    <p class="cFirst">Learn C language</p>
+                                    <p class="cSecond">10 topics</p>
+                                    <p class="cThird">Start Learning</p>
+                                </div>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </section>
+
+                    <!-- section 2b it contains all the courses for data Structures -->
+                    <section id="dataStructures">
+
+                        <div class="subjectLearn">
+
+                            <h3 class="topicLearn">Learn Data Structures and Algorithms</h3>
+
+                            <div class="learnContent">
+
+                                <!-- course 1 Learn Array -->
+                                <div class="cardLearn">
+                                    <img class="cImage" src="./images/Array data structure.jpg" alt="Clanguage">
+                                    <p class="cFirst">Learn Array</p>
+                                    <p class="cSecond">10 topics</p>
+                                </div>
+
+                                <!-- course 2 Learn Strings -->
+                                <div class="cardLearn">
+                                    <img class="cImage" src="./images/string.avif" alt="Clanguage">
+                                    <p class="cFirst">Learn String </p>
+                                    <p class="cSecond">10 topics</p>
+                                </div>
+
+                                <!-- course 3 Learn Linked List -->
+                                <div class="cardLearn">
+                                    <img class="cImage" src="./images/linkedList.png" alt="Clanguage">
+                                    <p class="cFirst">Learn Linked List</p>
+                                    <p class="cSecond">10 topics</p>
+                                </div>
+
+                                <!-- course 4 Learn Stack -->
+                                <div class="cardLearn">
+                                    <img class="cImage" src="./images/stack.jpg" alt="Clanguage">
+                                    <p class="cFirst">Learn Stack</p>
+                                    <p class="cSecond">10 topics</p>
+                                </div>
+
+                                <!-- course 5 Learn Queue -->
+                                <div class="cardLearn">
+                                    <img class="cImage" src="./images/queue.jpg" alt="Clanguage">
+                                    <p class="cFirst">Learn Queue</p>
+                                    <p class="cSecond">10 topics</p>
+                                </div>
+
+                                <!-- course 6 Learn Trees -->
+                                <div class="cardLearn">
+                                    <img class="cImage" src="./images/trees.png" alt="Clanguage">
+                                    <p class="cFirst">Learn Trees</p>
+                                    <p class="cSecond">10 topics</p>
+                                </div>
+
+                                <!-- course 7 Learn Graphs -->
+                                <div class="cardLearn">
+                                    <img class="cImage" src="./images/graph.jpg" alt="Clanguage">
+                                    <p class="cFirst">Learn Graphs</p>
+                                    <p class="cSecond">10 topics</p>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </section>
+
+                    <!-- Section 2c it contains all the courses related to web Development -->
+                    <section id="webDev">
+
+                        <div class="subjectLearn">
+
+                            <h3 class="topicLearn">Learn Web Development</h3>
+
+                            <div class="learnContent">
+
+                                <!-- course 1 Learn HTML -->
+                                <div class="cardLearn">
+                                    <img class="cImage" src="./images/html.webp" alt="Clanguage">
+                                    <p class="cFirst">Learn HTML</p>
+                                    <p class="cSecond">10 topics</p>
+                                </div>
+
+                                <!-- COURSE 2 Learn CSS -->
+                                <div class="cardLearn">
+                                    <img class="cImage" src="./images/css.jpg" alt="Clanguage">
+                                    <p class="cFirst">Learn CSS</p>
+                                    <p class="cSecond">10 topics</p>
+                                </div>
+
+                                <!-- course 3 Learn JavaScript -->
+                                <div class="cardLearn">
+                                    <img class="cImage" src="./images/javascript.png" alt="Clanguage">
+                                    <p class="cFirst">Learn Java Script</p>
+                                    <p class="cSecond">10 topics</p>
+                                </div>
+
+                                <!-- course 4 Leanr React JS -->
+                                <div class="cardLearn">
+                                    <img class="cImage" src="./images/react.png" alt="Clanguage">
+                                    <p class="cFirst">Learn React JS</p>
+                                    <p class="cSecond">10 topics</p>
+                                </div>
+
+                                <!-- course 5 Learn Node JS -->
+                                <div class="cardLearn">
+                                    <img class="cImage" src="./images/nodejs.jpg"></p>
+                                    <p class="cThird">Learn Node JS</p>
+                                    <p class="cSecond">10 topics</p>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </section>
+
+                </div>
+
+
+                <!-- scrolling Bar to scroll among different categories of courses and quiz section-->
+                <div class="scrollLearn">
+                    <h3>Learn</h3>
+                    <a href="#programmingLanguage"><p>Programming Languages</p></a>
+                    <a href="#dataStructures"><p>Data Structures</p></a>
+                    <a href="#webDev"><p>Web Development</p></a>
+                    <a href="#programmingLanguageQuiz"><p>Quizes</p></a>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Section 3 Quiz -->
+        <section id="Quizes">
+
+            <!-- cotainer to contain scrollBar and container containing all the quizes -->
+            <div class="quizes">
+
+                <!-- container to contain all the quizes -->
+                <div class="wholeQuizContent">
+
+                    <!-- section 3a it contains all the quizes of programming languages -->
+                    <section id="programmingLanguageQuiz">
+
+                        <div class="subjectQuiz">
+
+                            <h3 class="topicQuiz">Programming Language Quizes</h3>
+
+                            <div class="quizContent">
+
+                                <!-- quiz 1 c language  -->
+                                <a href="./c_quiz.html"><div class="cardQuiz">
+                                    <img class="qImage" src="./images/c-quiz.png" alt="Clanguage">
+                                    <p class="qFirst">C Language Quiz</p>
+                                    <p class="qSecond">18 Questions</p>
+                                </div></a>
+
+                                <!-- quiz 2 c++ language -->
+                                <a href="./cplusplus_quiz.html"><div class="cardQuiz">
+                                    <img class="qImage" src="./images/c++quiz.png" alt="Clanguage">
+                                    <p class="qFirst">C++ Language Quiz</p>
+                                    <p class="qSecond">18 Questions</p>
+                                </div></a>
+
+                                <!-- quiz 3 java language -->
+                                <a href="./java_quiz.html"><div class="cardQuiz">
+                                    <img class="qImage" src="./images/javaquiz.png" alt="Clanguage">
+                                    <p class="qFirst">Java Quiz</p>
+                                    <p class="qSecond">10 Question</p>
+                                </div></a>
+
+                                <!-- quiz 4 java Script Language -->
+                                <div class="cardQuiz">
+                                    <img class="qImage" src="./images/javaScript Quiz.png" alt="Clanguage">
+                                    <p class="qFirst">Java Script Quiz</p>
+                                    <p class="qSecond">10 Questions</p>
+                                </div>
+
+                                <!-- quiz 5 python language -->
+                                <div class="cardQuiz">
+                                    <img class="qImage" src="./images/python quiz.png" alt="Clanguage">
+                                    <p class="qFirst">Python Quiz</p>
+                                    <p class="qSecond">10 Questions</p>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </section>
+
+
+                    <!-- section 3b  data Structures it contains all the quizes of data Structures-->
+                    <section id="dataStructuresQuiz">
+
+                        <div class="subjectQuiz">
+
+                            <h3 class="topicQuiz">Data Structures and Algorithms Quizes</h3>
+
+                            <div class="quizContent">
+
+                                <!-- quiz 1 Array data structure -->
+                                <div class="cardQuiz">
+                                    <img class="qImage" src="./images/Array data structure.jpg" alt="Clanguage">
+                                    <p class="qFirst">Learn Array</p>
+                                    <p class="qSecond">10 topics</p>
+                                </div>
+
+                                <!-- quiz 2 String data structure -->
+                                <div class="cardQuiz">
+                                    <img class="qImage" src="./images/string.avif" alt="Clanguage">
+                                    <p class="qFirst">Learn String </p>
+                                    <p class="qSecond">10 topics</p>
+                                </div>
+
+                                <!--quiz 3 Linked List data structure  -->
+                                <div class="cardQuiz">
+                                    <img class="qImage" src="./images/linkedList.png" alt="Clanguage">
+                                    <p class="qFirst">Learn Linked List</p>
+                                    <p class="qSecond">10 topics</p>
+                                </div>
+
+                                <!-- quiz 4 Stack data structure -->
+                                <div class="cardQuiz">
+                                    <img class="qImage" src="./images/stack.jpg" alt="Clanguage">
+                                    <p class="qFirst">Learn Stack</p>
+                                    <p class="qSecond">10 topics</p>
+                                </div>
+
+                                <!-- quiz 5 Queue data structure -->
+                                <div class="cardQuiz">
+                                    <img class="qImage" src="./images/queue.jpg" alt="Clanguage">
+                                    <p class="qFirst">Learn Queue</p>
+                                    <p class="qSecond">10 topics</p>
+                                </div>
+
+                                <!-- quiz 6 Trees data strucuture -->
+                                <div class="cardQuiz">
+                                    <img class="qImage" src="./images/trees.png" alt="Clanguage">
+                                    <p class="qFirst">Learn Trees</p>
+                                    <p class="qSecond">10 topics</p>
+                                </div>
+
+                                <!-- quiz 7 Graphs data structures -->
+                                <div class="cardQuiz">
+                                    <img class="qImage" src="./images/graph.jpg" alt="Clanguage">
+                                    <p class="qFirst">Learn Graphs</p>
+                                    <p class="qSecond">10 topics</p>
+                                </div>
+
+                            </div>
+                            
+                        </div>
+
+                    </section>
+
+
+                     <!--section 3 c it contains all the quizes of web development  -->
+                    <section id="webDevQuiz">
+
+                        <div class="subjectQuiz">
+
+                            <h3 class="topicQuiz">Web Development Quizes</h3>
+
+                            <div class="quizContent">
+
+                                <!-- quiz 1 HTML -->
+                                <div class="cardQuiz">
+                                    <img class="qImage" src="./images/html.webp" alt="Clanguage">
+                                    <p class="qFirst">Learn HTML</p>
+                                    <p class="qSecond">10 topics</p>
+                                </div>
+
+                                <!-- quiz 2 CSS -->
+                                <div class="cardQuiz">
+                                    <img class="qImage" src="./images/css.jpg" alt="Clanguage">
+                                    <p class="qFirst">Learn CSS</p>
+                                    <p class="qSecond">10 topics</p>
+                                </div>
+
+                                <!-- quiz 3 Java Script -->
+                                <div class="cardQuiz">
+                                    <img class="qImage" src="./images/javascript.png" alt="Clanguage">
+                                    <p class="qFirst">Learn Java Script</p>
+                                    <p class="qSecond">10 topics</p>
+                                </div>
+
+                                <!-- quiz 4 React JS -->
+                                <div class="cardQuiz">
+                                    <img class="qImage" src="./images/react.png" alt="Clanguage">
+                                    <p class="qFirst">Learn React JS</p>
+                                    <p class="qSecond">10 topics</p>
+                                </div>
+
+                                <!-- quiz 5 Node JS -->
+                                <div class="cardQuiz">
+                                    <img class="qImage" src="./images/nodejs.jpg"></p>
+                                    <p class="qThird">Learn Node JS</p>
+                                    <p class="qSecond">10 topics</p>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </section>
+
+                </div>
+
+                <!-- scroll Bar to scroll among different categories of quizes and learn section -->
+                <div class="scrollQuiz">
+                    <h3>Quizes</h3>
+                    <a href="#programmingLanguageQuiz"><p>Programming Languages</p></a>
+                    <a href="#dataStructuresQuiz"><p>Data Structures</p></a>
+                    <a href="#webDevQuiz"><p>Web Development</p></a>
+                    <a href="#programmingLanguage"><p>Learn</p></a>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- footer section it contains section 4 contact, office address, social media links and direct links to navigate website -->
+    <footer>
+
+        <!-- section 4 contact -->
+        <section id="contact">
+
+            <div class="contact">
+
+                <!-- contact form -->
+                <div class="contactForm">
+                
+                <!-- heading Contact Us -->
+                <h4>Contact Us</h4>
+                    
+                    <form action="">
+
+                        <div class="form">
+
+                            <!-- first name -->
+                            <span><input id="firstName" type="text" placeholder="First Name" name="FirstName"></span>
+
+                            <!-- second name -->
+                            <span><input id="lastName" type="text" placeholder="Last Name" name="LastName"></span>
+
+                            <!-- mail -->
+                            <span><input id="mail" type="email" placeholder="Mail" name="Mail"></span>
+
+                            <!-- phone -->
+                            <span><input id="phone" type="tel" placeholder="Phone" name="Phone"></span>
+
+                            <!-- message -->
+                            <textarea id="message" placeholder="Message" name="Message"></textarea>
+
+                            <!-- submit button -->
+                            <span><button class="submitButton">Submit</button></span>
+
+                        </div>
+
+                    </form>
+
+                </div>
+
+
+                <!-- contact information -->
+                <div class="contactInformation">
+
+                    <!-- address -->
+                    <div class="address">
+                        <h4>Office Address: </h4>
+                        <p>77 Baker Street, Noida, 872822, Uttar Pradesh, India</p>
+                        <p>Call Us : +91 9382819223</p>
+                        <p>We are open from Monday - Friday (08:00 am - 05:00 pm)</p>
+                    </div>
+
+                    <!-- social media links -->
+                    <div class="socialMedia">
+
+                        <h4>Follow Us On</h4>
+
+                        <!-- Instagram -->
+                        <img src="./images/insta.webp" alt="instagram">
+
+                        <!-- LinkedIn -->
+                        <img src="./images/linkedIn.png" alt="linkedIn">
+
+                        <!-- Youtube -->
+                        <img src="./images/youtube.png" alt="youtube">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- direct links to navigate the website -->
+        <div id="links">
+
+            <!-- Programming languages links -->
+            <div class="links programmingLanguage">
+                <h5>Programming Languages</h5>
+                <p>C language</p>
+                <p>C++ Language</p>
+                <p>Java</p>
+                <p>JavaScript</p>
+                <p>Python</p>
+            </div>
+
+            <!-- data strucutures links -->
+            <div class="links DataStrucure">
+                <h5>Data Strucure</h5>
+                <p>Array</p>
+                <p>String</p>
+                <p>Linked List</p>
+                <p>Stack</p>
+                <p>Queue</p>
+                <p>Tree</p>
+                <p>Graphs</p>
+            </div>
+
+            <!-- webDev links -->
+            <div class="links WebDev">
+                <h5>Web Development</h5>
+                <p>HTML</p>
+                <p>CSS</p>
+                <P>JavaScript</P>
+                <p>React</p>
+            </div>
+
+        </div>
+
+        <!-- copy right -->
+        <div class="allrights">
+            <p>&copy;All rights are reserved by Tech School</p>
+        </div>
+
+    </footer>
+
+
+</body>
+</html>
