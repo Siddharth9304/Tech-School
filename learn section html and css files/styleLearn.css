@@ -26,6 +26,7 @@ section {
 
 /* Styling header */
 header{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     background-color: #111;
     height: 70px;
     width: 100%;
@@ -35,14 +36,15 @@ header{
     position: fixed;
     top: 0;
     border-bottom: 3px solid #262626;
+    z-index: 1;
 }
 
 header > h1{
+    line-height: 1;
     color: white;
     margin-left: 25px;
     margin-right: 10px;
     font-size: 32px;
-  
 }
 
 #navigation{
@@ -80,6 +82,20 @@ header > h1{
     width: 100%;
     height: 100%;
     overflow-y: scroll;
+}
+
+.videoLecture{
+    color: rgb(253, 135, 135);
+}
+.youtubeLecture{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.youtubeLecture iframe{
+    height: 200px;
+    max-width: 300px;
+    min-width: 100px;
 }
 
 .scrollTopics{
@@ -157,6 +173,7 @@ section{
         display: inline-block;
     }
     .navBar{
+        line-height: 1;
         display: flex;
         position: absolute;
         background-color: gray;
@@ -204,4 +221,17 @@ section{
     #menu-btn:checked ~ .mainContent{
         margin-top: 150px;
     }
+    .container{
+        height: auto;
+        grid-template-columns: 1fr;
+    }
+    .scrollTopics{
+        display: none;
+    }
+
+    /* footer */
+    #links{
+        flex-direction: column;
+        gap: 80px;
+     }
 }
