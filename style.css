@@ -228,7 +228,8 @@ main{
     display: flex;
     flex-direction: column;
     gap: 45px;
-    margin-left: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
     padding-top: 93px;
 }
 
@@ -536,15 +537,33 @@ header{
     #menu-btn:checked ~ .close{
         display: inline-block;
     }
-    #menu-btn:checked ~ .mainContent{
-        margin-top: 150px;
-    }
     .contentInfo{
         flex-direction: column;
     }
     .callToAction{
         flex-direction: column;
     }
+    
+    .quotes{
+        height: auto;
+        width: 80vw;
+        padding: 20px;
+    }
+    .quotes > div{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+     /* learn and quiz */
+    .learn, .quizes{
+        display: block;
+        height: auto;    
+    }
+    .scrollLearn, .scrollQuiz{
+        display: none;
+    }
+
+    /* footer contact form and links */
     .contact{
         flex-direction: column;
     }
@@ -565,29 +584,10 @@ header{
     }
     #message{
         grid-column: 1/2;
-     }
+    }
     #links{
         flex-direction: column;
         gap: 80px;
-     }
-     .quotes{
-        height: auto;
-        width: 80vw;
-        padding: 20px;
-     }
-     .quotes > div{
-        flex-direction: column;
-        flex-wrap: wrap;
-     }
-
-
-     /* learn and quiz */
-    .learn, .quizes{
-        display: block;
-        height: auto;    
-    }
-    .scrollLearn, .scrollQuiz{
-        display: none;
     }
 }
 
@@ -606,4 +606,6 @@ header{
         width: 70vw;
     }
 }
+
+
 
