@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Quiz with Explanations</title>
+    <link rel="stylesheet" href="./styleQuiz.css">
+</head>
+<body>
+    <div class="container">
+
+        <!-- Header Container -->
+        <div class="header">
+            
+            <header>
+    
+                <!-- Heading Website Name -->
+                <h1>Tech School</h1>
+    
+                <!-- navigation Bar -->
+                <div id="navigation">
+    
+                    <!-- checkbox to implement hamburger -->
+                    <input class="menu-btn" type="checkbox" id="menu-btn" name="menu-btn" />
+    
+                    <!-- hamburger icon -->
+                    <label class="menu-icon open" for="menu-btn">
+                        <span>&#9776;</span>
+                    </label>
+    
+                    <!-- cross icom -->
+                    <label class="menu-icon close" for="menu-btn">
+                        <span>&#10005;</span>
+                    </label>
+    
+                    <!-- container to contain navBar buttons -->
+                    <div class="navBar">
+    
+                        <!-- for Section 1 Home -->
+                        <a href="../index.html#Home"><button>Home</button></a>
+    
+                        <!-- for Section 2 Learn -->
+                        <a href="../index.html#programmingLanguage"><button>Learn</button></a>
+    
+                        <!-- for section 3 Quiz -->
+                        <a href="../index.html#programmingLanguageQuiz"><button>Quiz</button></a>
+    
+                        <!-- for section 4 Contact -->
+                        <a href="../index.html#contact"><button>Contact</button></a>
+    
+                    </div>
+    
+                </div>
+    
+            </header>
+        </div>
+    
+        <main class="allQuestions">  
+
+            <h1 class="quiz-title">Java Language Quiz with Explanations</h1>
+
+            <!-- Question 1 -->
+            <div class="question">
+                <h2>1. What is the default value of an int variable in Java?</h2>
+                <input type="radio" id="q1a" class="wrong" name="q1" value="a">
+                <label for="q1a" class="option wrong">null</label>
+                <input type="radio" id="q1b" class="wrong" name="q1" value="b">
+                <label for="q1b" class="option wrong">undefined</label>
+                <input type="radio" id="q1c" class="correct" name="q1" value="c">
+                <label for="q1c" class="option correct">0</label>
+                <input type="radio" id="q1d" class="wrong" name="q1" value="d">
+                <label for="q1d" class="option wrong">1</label>
+                <div class="wrongexplanation explanation"><p>This is incorrect. The default value of an int in Java is 0.</p></div>
+                <div class="correctexplanation explanation"><p>This is correct! The default value of an int in Java is 0.</p></div>
+            </div>
+            
+             <!-- Question 2 -->
+            <div class="question">
+                <h2>2. Which of the following is the correct syntax to declare a Java variable?</h2>
+                <input type="radio" id="q2a" class="wrong" name="q2" value="a">
+                <label for="q2a" class="option wrong">int num = 10;</label>
+                <input type="radio" id="q2b" class="correct" name="q2" value="b">
+                <label for="q2b" class="option correct">All of the above</label>
+                <input type="radio" id="q2c" class="wrong" name="q2" value="c">
+                <label for="q2c" class="option wrong">double num = 10.5;</label>
+                <input type="radio" id="q2d" class="wrong" name="q2" value="d">
+                <label for="q2d" class="option wrong">None of the above</label>
+                <div class="wrongexplanation explanation"><p>This is incorrect. The correct syntax for variable declaration in Java is all of the above.</p></div>
+                <div class="correctexplanation explanation"><p>This is correct! All of the above options are correct for declaring a variable in Java.</p></div>
+            </div>
+            
+             <!-- Question 3 -->
+            <div class="question">
+                <h2>3. What is the output of the following code snippet? <code>System.out.println(10 + 20 + "30");</code></h2>
+                <input type="radio" id="q3a" class="wrong" name="q3" value="a">
+                <label for="q3a" class="option wrong">30</label>
+                <input type="radio" id="q3b" class="wrong" name="q3" value="b">
+                <label for="q3b" class="option wrong">1020</label>
+                <input type="radio" id="q3c" class="correct" name="q3" value="c">
+                <label for="q3c" class="option correct">1030</label>
+                <input type="radio" id="q3d" class="wrong" name="q3" value="d">
+                <label for="q3d" class="option wrong">Error</label>
+                <div class="wrongexplanation explanation"><p>This is incorrect. The correct output is 1030.</p></div>
+                <div class="correctexplanation explanation"><p>This is correct! The output is 1030 due to string concatenation.</p></div>
+            </div>
+            
+             <!-- Question 4 -->
+            <div class="question">
+                <h2>4. Which of the following keywords is used to prevent inheritance in Java?</h2>
+                <input type="radio" id="q4a" class="correct" name="q4" value="a">
+                <label for="q4a" class="option correct">final</label>
+                <input type="radio" id="q4b" class="wrong" name="q4" value="b">
+                <label for="q4b" class="option wrong">static</label>
+                <input type="radio" id="q4c" class="wrong" name="q4" value="c">
+                <label for="q4c" class="option wrong">private</label>
+                <input type="radio" id="q4d" class="wrong" name="q4" value="d">
+                <label for="q4d" class="option wrong">super</label>
+                <div class="wrongexplanation explanation"><p>This is incorrect. The correct keyword to prevent inheritance in Java is 'final'.</p></div>
+                <div class="correctexplanation explanation"><p>This is correct! The 'final' keyword prevents inheritance in Java.</p></div>
+            </div>
+            
+             <!-- Question 5 -->
+            <div class="question">
+                <h2>5. What will be the output of the following code snippet? <code>System.out.println(5 + 3 + \"Hello\");</code></h2>
+                <input type="radio" id="q5a" class="correct" name="q5" value="a">
+                <label for="q5a" class="option correct">8Hello</label>
+                <input type="radio" id="q5b" class="wrong" name="q5" value="b">
+                <label for="q5b" class="option wrong">Hello8</label>
+                <input type="radio" id="q5c" class="wrong" name="q5" value="c">
+                <label for="q5c" class="option wrong">58Hello</label>
+                <input type="radio" id="q5d" class="wrong" name="q5" value="d">
+                <label for="q5d" class="option wrong">Error</label>
+                <div class="wrongexplanation explanation"><p>This is incorrect. The correct output is 8Hello due to string concatenation.</p></div>
+                <div class="correctexplanation explanation"><p>This is correct! The output is 8Hello because integers are added first, followed by string concatenation.</p></div>
+            </div>
+            
+             <!-- Question 6 -->
+            <div class="question">
+                <h2>6. Which of the following is the correct way to declare a constant variable in Java?</h2>
+                <input type="radio" id="q6a" class="correct" name="q6" value="a">
+                <label for="q6a" class="option correct">final int num = 10;</label>
+                <input type="radio" id="q6b" class="wrong" name="q6" value="b">
+                <label for="q6b" class="option wrong">const int num = 10;</label>
+                <input type="radio" id="q6c" class="wrong" name="q6" value="c">
+                <label for="q6c" class="option wrong">int num = final 10;</label>
+                <input type="radio" id="q6d" class="wrong" name="q6" value="d">
+                <label for="q6d" class="option wrong">final const int num = 10;</label>
+                <div class="wrongexplanation explanation"><p>This is incorrect. The correct syntax is 'final int num = 10;'.</p></div>
+                <div class="correctexplanation explanation"><p>This is correct! The correct way to declare a constant variable is 'final int num = 10;'.</p></div>
+            </div>
+
+             <!-- Question 7 -->
+            <div class="question">
+                <h2>7. What will be the output of the following code snippet? <code>int[] arr = {1, 2, 3}; System.out.println(arr[3]);</code></h2>
+                <input type="radio" id="q7a" class="wrong" name="q7" value="a">
+                <label for="q7a" class="option wrong">1</label>
+                <input type="radio" id="q7b" class="wrong" name="q7" value="b">
+                <label for="q7b" class="option wrong">2</label>
+                <input type="radio" id="q7c" class="wrong" name="q7" value="c">
+                <label for="q7c" class="option wrong">3</label>
+                <input type="radio" id="q7d" class="correct" name="q7" value="d">
+                <label for="q7d" class="option correct">ArrayIndexOutOfBoundsException</label>
+                <div class="wrongexplanation explanation"><p>This is incorrect. The correct answer is an ArrayIndexOutOfBoundsException since the array has only indices 0, 1, and 2.</p></div>
+                <div class="correctexplanation explanation"><p>This is correct! Attempting to access arr[3] will throw an ArrayIndexOutOfBoundsException.</p></div>
+            </div>
+            
+             <!-- Question 8 -->
+            <div class="question">
+                <h2>8. What is the result of the expression <code>5 + 3 * 2</code> in Java?</h2>
+                <input type="radio" id="q8a" class="wrong" name="q8" value="a">
+                <label for="q8a" class="option wrong">16</label>
+                <input type="radio" id="q8b" class="correct" name="q8" value="b">
+                <label for="q8b" class="option correct">11</label>
+                <input type="radio" id="q8c" class="wrong" name="q8" value="c">
+                <label for="q8c" class="option wrong">13</label>
+                <input type="radio" id="q8d" class="wrong" name="q8" value="d">
+                <label for="q8d" class="option wrong">10</label>
+                <div class="wrongexplanation explanation"><p>This is incorrect. The correct result is 11 because multiplication has higher precedence than addition.</p></div>
+                <div class="correctexplanation explanation"><p>This is correct! The result is 11, as multiplication happens before addition.</p></div>
+            </div>
+
+             <!-- Question 9 -->
+            <div class="question">
+                <h2>9. Which of the following statements is true about Java?</h2>
+                <input type="radio" id="q9a" class="wrong" name="q9" value="a">
+                <label for="q9a" class="option wrong">Java is a compiled language only</label>
+                <input type="radio" id="q9b" class="correct" name="q9" value="b">
+                <label for="q9b" class="option correct">Java is both a compiled and interpreted language</label>
+                <input type="radio" id="q9c" class="wrong" name="q9" value="c">
+                <label for="q9c" class="option wrong">Java is an interpreted language only</label>
+                <input type="radio" id="q9d" class="wrong" name="q9" value="d">
+                <label for="q9d" class="option wrong">Java is neither compiled nor interpreted</label>
+                <div class="wrongexplanation explanation"><p>This is incorrect. The correct statement is that Java is both compiled and interpreted.</p></div>
+                <div class="correctexplanation explanation"><p>This is correct! Java is first compiled into bytecode and then interpreted by the JVM.</p></div>
+            </div>
+            
+             <!-- Question 10 -->
+            <div class="question">
+                <h2>10. What is the output of the following code snippet? <code>String str = "Java"; str = str + " Programming"; System.out.println(str);</code></h2>
+                <input type="radio" id="q10a" class="wrong" name="q10" value="a">
+                <label for="q10a" class="option wrong">JavaProgramming</label>
+                <input type="radio" id="q10b" class="correct" name="q10" value="b">
+                <label for="q10b" class="option correct">Java Programming</label>
+                <input type="radio" id="q10c" class="wrong" name="q10" value="c">
+                <label for="q10c" class="option wrong">JavaPrograming</label>
+                <input type="radio" id="q10d" class="wrong" name="q10" value="d">
+                <label for="q10d" class="option wrong">Error</label>
+                <div class="wrongexplanation explanation"><p>This is incorrect. The correct output is "Java Programming" due to the string concatenation.</p></div>
+                <div class="correctexplanation explanation"><p>This is correct! The output is "Java Programming" due to string concatenation.</p></div>
+            </div>
+            
+             <!-- Question 11 -->
+            <div class="question">
+                <h2>11. What is the difference between the "==" operator and the ".equals()" method in Java?</h2>
+                <input type="radio" id="q11a" class="wrong" name="q11" value="a">
+                <label for="q11a" class="option wrong">"==" checks object equality, while ".equals()" checks reference equality</label>
+                <input type="radio" id="q11b" class="wrong" name="q11" value="b">
+                <label for="q11b" class="option wrong">"==" checks reference equality, while ".equals()" checks object equality</label>
+                <input type="radio" id="q11c" class="correct" name="q11" value="c">
+                <label for="q11c" class="option correct">"==" checks reference equality, while ".equals()" checks object equality</label>
+                <input type="radio" id="q11d" class="wrong" name="q11" value="d">
+                <label for="q11d" class="option wrong">There is no difference between "==" and ".equals()"</label>
+                <div class="wrongexplanation explanation"><p>This is incorrect. The correct difference is "==" checks reference equality, and ".equals()" checks object equality.</p></div>
+                <div class="correctexplanation explanation"><p>This is correct! "==" checks if two references point to the same object, while ".equals()" checks if the objects themselves are equal.</p></div>
+            </div>
+            
+             <!-- Question 12 -->
+            <div class="question">
+                <h2>12. What does the "super" keyword refer to in Java?</h2>
+                <input type="radio" id="q12a" class="wrong" name="q12" value="a">
+                <label for="q12a" class="option wrong">It refers to the parent class of the current class</label>
+                <input type="radio" id="q12b" class="wrong" name="q12" value="b">
+                <label for="q12b" class="wrong">It refers to the current class itself</label>
+                <input type="radio" id="q12c" class="correct" name="q12" value="c">
+                <label for="q12c" class="option correct">It refers to the immediate superclass of the current object</label>
+                <input type="radio" id="q12d" class="wrong" name="q12" value="d">
+                <label for="q12d" class="option wrong">It refers to an instance of a subclass</label>
+                <div class="wrongexplanation explanation"><p>This is incorrect. The "super" keyword refers to the immediate superclass of the current object.</p></div>
+                <div class="correctexplanation explanation"><p>This is correct! "super" refers to the immediate superclass of the current object.</p></div>
+            </div>
+            
+             <!-- Question 13 -->
+            <div class="question">
+                <h2>13. What will be the output of the following code snippet? <code>int x = 5; System.out.println(x++ + ++x);</code></h2>
+                <input type="radio" id="q13a" class="wrong" name="q13" value="a">
+                <label for="q13a" class="option wrong">10</label>
+                <input type="radio" id="q13b" class="wrong" name="q13" value="b">
+                <label for="q13b" class="wrong">11</label>
+                <input type="radio" id="q13c" class="correct" name="q13" value="c">
+                <label for="q13c" class="option correct">12</label>
+                <input type="radio" id="q13d" class="wrong" name="q13" value="d">
+                <label for="q13d" class="option wrong">13</label>
+                <div class="wrongexplanation explanation"><p>This is incorrect. The correct output is 12 because <code>x++</code> increments after the value is used and <code>++x</code> increments before the value is used.</p></div>
+                <div class="correctexplanation explanation"><p>This is correct! The output is 12 because <code>x++</code> evaluates to 5 and <code>++x</code> increments x to 7, giving 5 + 7 = 12.</p></div>
+            </div>
+            
+             <!-- Question 14 -->
+            <div class="question">
+                <h2>14. What is the result of the following code snippet? <code>String s1 = "Hello"; String s2 = "Hello"; System.out.println(s1 == s2);</code></h2>
+                <input type="radio" id="q14a" class="correct" name="q14" value="a">
+                <label for="q14a" class="option correct">true</label>
+                <input type="radio" id="q14b" class="wrong" name="q14" value="b">
+                <label for="q14b" class="option wrong">false</label>
+                <input type="radio" id="q14c" class="wrong" name="q14" value="c">
+                <label for="q14c" class="option wrong">Compilation error</label>
+                <input type="radio" id="q14d" class="wrong" name="q14" value="d">
+                <label for="q14d" class="option wrong">Runtime exception</label>
+                <div class="wrongexplanation explanation"><p>This is incorrect. The correct answer is true because string literals are interned in Java, meaning <code>s1</code> and <code>s2</code> reference the same object.</p></div>
+                <div class="correctexplanation explanation"><p>This is correct! String literals in Java are interned, so <code>s1</code> and <code>s2</code> refer to the same object.</p></div>
+            </div>
+            
+             <!-- Question 15 -->
+            <div class="question">
+                <h2>15. Which of the following will cause a <code>NullPointerException</code> in Java?</h2>
+                <input type="radio" id="q15a" class="wrong" name="q15" value="a">
+                <label for="q15a" class="option wrong">Accessing an element of an array with a valid index</label>
+                <input type="radio" id="q15b" class="correct" name="q15" value="b">
+                <label for="q15b" class="option correct">Calling a method on a null object reference</label>
+                <input type="radio" id="q15c" class="wrong" name="q15" value="c">
+                <label for="q15c" class="option wrong">Accessing a static variable</label>
+                <input type="radio" id="q15d" class="wrong" name="q15" value="d">
+                <label for="q15d" class="option wrong">Instantiating a class</label>
+                <div class="wrongexplanation explanation"><p>This is incorrect. The correct cause is calling a method on a null object reference, which leads to a <code>NullPointerException</code>.</p></div>
+                <div class="correctexplanation explanation"><p>This is correct! Calling a method on a null object reference will throw a <code>NullPointerException</code>.</p></div>
+            </div>
+            
+             <!-- Question 16 -->
+            <div class="question">
+                <h2>16. What is the output of the following code? <code>ArrayList<Integer> list = new ArrayList<>(Arrays.asList(1, 2, 3)); list.remove(Integer.valueOf(2)); System.out.println(list);</code></h2>
+                <input type="radio" id="q16a" class="wrong" name="q16" value="a">
+                <label for="q16a" class="option wrong">[1, 2, 3]</label>
+                <input type="radio" id="q16b" class="correct" name="q16" value="b">
+                <label for="q16b" class="option correct">[1, 3]</label>
+                <input type="radio" id="q16c" class="wrong" name="q16" value="c">
+                <label for="q16c" class="option wrong">[2, 3]</label>
+                <input type="radio" id="q16d" class="wrong" name="q16" value="d">
+                <label for="q16d" class="option wrong">[2]</label>
+                <div class="wrongexplanation explanation"><p>This is incorrect. The correct output is [1, 3] because <code>remove(Integer.valueOf(2))</code> removes the element 2 from the list.</p></div>
+                <div class="correctexplanation explanation"><p>This is correct! The element 2 is removed, leaving the list [1, 3].</p></div>
+            </div>
+            
+             <!-- Question 17 -->
+            <div class="question">
+                <h2>17. What will be the output of the following code? <code>int x = 10; int y = 20; if(x > y) { System.out.println("x is greater"); } else { System.out.println("y is greater"); }</code></h2>
+                <input type="radio" id="q17a" class="wrong" name="q17" value="a">
+                <label for="q17a" class="option wrong">x is greater</label>
+                <input type="radio" id="q17b" class="correct" name="q17" value="b">
+                <label for="q17b" class="option correct">y is greater</label>
+                <input type="radio" id="q17c" class="wrong" name="q17" value="c">
+                <label for="q17c" class="option wrong">Compilation error</label>
+                <input type="radio" id="q17d" class="wrong" name="q17" value="d">
+                <label for="q17d" class="option wrong">Runtime error</label>
+                <div class="wrongexplanation explanation"><p>This is incorrect. The correct output is "y is greater" since 10 is less than 20.</p></div>
+                <div class="correctexplanation explanation"><p>This is correct! Since x is 10 and y is 20, "y is greater" is printed.</p></div>
+            </div>
+            
+             <!-- Question 18 -->
+            <div class="question">
+                <h2>18. What is the output of the following code? <code>ArrayList<Integer> list = new ArrayList<>(Arrays.asList(1, 2, 3)); list.remove(Integer.valueOf(2)); System.out.println(list);</code></h2>
+                <input type="radio" id="q18a" class="wrong" name="q18" value="a">
+                <label for="q18a" class="option wrong">[1, 2, 3]</label>
+                <input type="radio" id="q18b" class="correct" name="q18" value="b">
+                <label for="q18b" class="option correct">[1, 3]</label>
+                <input type="radio" id="q18c" class="wrong" name="q18" value="c">
+                <label for="q18c" class="option wrong">[2, 3]</label>
+                <input type="radio" id="q18d" class="wrong" name="q18" value="d">
+                <label for="q18d" class="option wrong">[2]</label>
+                <div class="wrongexplanation explanation"><p>This is incorrect. The correct output is [1, 3] because <code>remove(Integer.valueOf(2))</code> removes the element 2 from the list.</p></div>
+                <div class="correctexplanation explanation"><p>This is correct! The element 2 is removed, leaving the list [1, 3].</p></div>
+            </div>
+            
+        </main>
+
+        <!-- scroll bar to navigate among questions -->
+        <div class="scrollQuestions">
+
+            
+            <!-- easy difficulty level -->
+            <div class="difficultyLevel">
+
+                <div class="easy">Easy</div>
+
+                <div class="questionNumbers">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                    <div>4</div>
+                    <div>5</div>
+                    <div>6</div>
+                </div>
+
+            </div>
+
+            <!-- medium level questions -->
+            <div class="difficultyLevel">
+
+                <div class="medium">Medium</div>
+
+                <div class="questionNumbers">
+                    <div>7</div>
+                    <div>8</div>
+                    <div>9</div>
+                    <div>10</div>
+                    <div>11</div>
+                    <div>12</div>
+                </div>
+
+            </div>
+
+            <!-- hard level questions -->
+            <div class="difficultyLevel">
+
+                <div class="hard">Hard</div>
+
+                <div class="questionNumbers">
+                    <div>13</div>
+                    <div>14</div>
+                    <div>15</div>
+                    <div>16</div>
+                    <div>17</div>
+                    <div>18</div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+</body>
+</html>

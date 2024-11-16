@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C++ Quiz with Explanations</title>
+    <link rel="stylesheet" href="./styleQuiz.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- Header Container -->
+        <div class="header">
+            
+            <header>
+    
+                <!-- Heading Website Name -->
+                <h1>Tech School</h1>
+    
+                <!-- navigation Bar -->
+                <div id="navigation">
+    
+                    <!-- checkbox to implement hamburger -->
+                    <input class="menu-btn" type="checkbox" id="menu-btn" name="menu-btn" />
+    
+                    <!-- hamburger icon -->
+                    <label class="menu-icon open" for="menu-btn">
+                        <span>&#9776;</span>
+                    </label>
+    
+                    <!-- cross icom -->
+                    <label class="menu-icon close" for="menu-btn">
+                        <span>&#10005;</span>
+                    </label>
+    
+                    <!-- container to contain navBar buttons -->
+                    <div class="navBar">
+    
+                        <!-- for Section 1 Home -->
+                        <a href="../index.html#Home"><button>Home</button></a>
+    
+                        <!-- for Section 2 Learn -->
+                        <a href="../index.html#programmingLanguage"><button>Learn</button></a>
+    
+                        <!-- for section 3 Quiz -->
+                        <a href="../index.html#programmingLanguageQuiz"><button>Quiz</button></a>
+    
+                        <!-- for section 4 Contact -->
+                        <a href="../index.html#contact"><button>Contact</button></a>
+    
+                    </div>
+    
+                </div>
+    
+            </header>
+        </div>
+    
+    
+    <main class="allQuestions">  
+        <h1 class="quiz-title">C++ Language Quiz with Explanations</h1>
+
+        <!-- Question 1 -->
+        <div class="question">
+            <h2>1. What is the output of the following code?</h2>
+        <pre><code>
+ #include <iostream>
+ using namespace std;
+ int main() {
+     int x = 5;
+     cout << x++;
+     return 0;
+ }
+        </code></pre>
+            <input type="radio" id="q1a" class="wrong" name="q1" value="a">
+            <label for="q1a" class="option wrong">6</label>
+            <input type="radio" id="q1b" class="correct" name="q1" value="b">
+            <label for="q1b" class="option correct">5</label>
+            <input type="radio" id="q1c" class="wrong" name="q1" value="c">
+            <label for="q1c" class="option wrong">Error</label>
+            <input type="radio" id="q1d" class="wrong" name="q1" value="d">
+            <label for="q1d" class="option wrong">Undefined Behavior</label>
+            <div class="wrongexplanation explanation"><p>This is incorrect. The post-increment operator prints the current value of 'x' (5) before incrementing it.</p></div>
+            <div class="correctexplanation explanation"><p>This is correct! The post-increment operator prints 5 and then increments 'x'.</p></div>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="question">
+            <h2>2. What will be the output of the following code?</h2>
+        <pre><code>
+ #include <iostream>
+ using namespace std;
+ int main() {
+     bool x = false;
+     cout << x;
+     return 0;
+ }
+        </code></pre>
+            <input type="radio" id="q2a" class="wrong" name="q2" value="a">
+            <label for="q2a" class="option wrong">True</label>
+            <input type="radio" id="q2b" class="correct" name="q2" value="b">
+            <label for="q2b" class="option correct">0</label>
+            <input type="radio" id="q2c" class="wrong" name="q2" value="c">
+            <label for="q2c" class="option wrong">False</label>
+            <input type="radio" id="q2d" class="wrong" name="q2" value="d">
+            <label for="q2d" class="option wrong">Error</label>
+            <div class="wrongexplanation explanation"><p>This is incorrect. In C++, the boolean value 'false' is represented as 0.</p></div>
+            <div class="correctexplanation explanation"><p>This is correct! 'false' is printed as 0 in C++.</p></div>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="question">
+            <h2>3. What is the output of the following code?</h2>
+        <pre><code>
+ #include <iostream>
+ using namespace std;
+ int main() {
+     int a = 5, b = 0;
+     cout << a / b;
+     return 0;
+ }
+        </code></pre>
+            <input type="radio" id="q3a" class="wrong" name="q3" value="a">
+            <label for="q3a" class="option wrong">Error</label>
+            <input type="radio" id="q3b" class="correct" name="q3" value="b">
+            <label for="q3b" class="option correct">Undefined Behavior</label>
+            <input type="radio" id="q3c" class="wrong" name="q3" value="c">
+            <label for="q3c" class="option wrong">Infinity</label>
+            <input type="radio" id="q3d" class="wrong" name="q3" value="d">
+            <label for="q3d" class="option wrong">0</label>
+            <div class="wrongexplanation explanation"><p>This is incorrect. Dividing by zero results in undefined behavior in C++.</p></div>
+            <div class="correctexplanation explanation"><p>This is correct! Dividing by zero leads to undefined behavior in C++.</p></div>
+        </div>
+
+        <!-- Question 4 -->
+        <div class="question">
+            <h2>4. What will be the output of the following code?</h2>
+        <pre><code>
+ #include <iostream>
+ using namespace std;
+ int main() {
+     int a = 5;
+     if (a = 0)
+         cout << "True";
+     else
+         cout << "False";
+     return 0;
+ }
+        </code></pre>
+            <input type="radio" id="q4a" class="wrong" name="q4" value="a">
+            <label for="q4a" class="option wrong">True</label>
+            <input type="radio" id="q4b" class="correct" name="q4" value="b">
+            <label for="q4b" class="option correct">False</label>
+            <input type="radio" id="q4c" class="wrong" name="q4" value="c">
+            <label for="q4c" class="option wrong">Error</label>
+            <input type="radio" id="q4d" class="wrong" name="q4" value="d">
+            <label for="q4d" class="option wrong">Undefined Behavior</label>
+            <div class="wrongexplanation explanation"><p>This is incorrect. The assignment 'a = 0' makes 'a' 0, which evaluates to false.</p></div>
+            <div class="correctexplanation explanation"><p>This is correct! The assignment 'a = 0' results in false, so "False" is printed.</p></div>
+        </div>
+
+        <!-- Question 5 -->
+        <div class="question">
+            <h2>5. Which of the following is the correct way to declare a function pointer in C++?</h2>
+            <input type="radio" id="q5a" class="wrong" name="q5" value="a">
+            <label for="q5a" class="option wrong">int &func();</label>
+            <input type="radio" id="q5b" class="correct" name="q5" value="b">
+            <label for="q5b" class="option correct">int (*func)();</label>
+            <input type="radio" id="q5c" class="wrong" name="q5" value="c">
+            <label for="q5c" class="option wrong">int func[]();</label>
+            <input type="radio" id="q5d" class="wrong" name="q5" value="d">
+            <label for="q5d" class="option wrong">int func*();</label>
+            <div class="wrongexplanation explanation"><p>This is incorrect. The correct syntax for declaring a function pointer is 'int (*func)();'.</p></div>
+            <div class="correctexplanation explanation"><p>This is correct! 'int (*func)();' correctly declares a pointer to a function that returns an integer.</p></div>
+        </div>
+
+        <!-- Question 6 -->
+        <div class="question">
+            <h2>6. What is the output of the following code?</h2>
+        <pre><code>
+ #include <iostream>
+ using namespace std;
+ int main() {
+     int i = 5;
+     cout &les;&les; i++;
+     return 0;
+ }
+        </code></pre>
+            <input type="radio" id="q6a" class="correct" name="q6" value="a">
+            <label for="q6a" class="option correct">5</label>
+            <input type="radio" id="q6b" class="wrong" name="q6" value="b">
+            <label for="q6b" class="option wrong">6</label>
+            <input type="radio" id="q6c" class="wrong" name="q6" value="c">
+            <label for="q6c" class="option wrong">0</label>
+            <input type="radio" id="q6d" class="wrong" name="q6" value="d">
+            <label for="q6d" class="option wrong">Undefined</label>
+            <div class="wrongexplanation explanation"><p>This is incorrect. The post-increment operator prints 5 and then increments 'i'.</p></div>
+            <div class="correctexplanation explanation"><p>This is correct! The post-increment operator prints 5 and then increments 'i' to 6.</p></div>
+        </div>
+        <!-- Question 7 -->
+        <div class="question">
+            <h2>7. What will be the output of the following code?</h2>
+        <pre><code>
+ #include <iostream>
+ using namespace std;
+ int main() {
+     int a = 5;
+     cout << ++a;
+     return 0;
+ }
+        </code></pre>
+            <input type="radio" id="q7a" class="correct" name="q7" value="a">
+            <label for="q7a" class="option correct">6</label>
+            <input type="radio" id="q7b" class="wrong" name="q7" value="b">
+            <label for="q7b" class="option wrong">5</label>
+            <input type="radio" id="q7c" class="wrong" name="q7" value="c">
+            <label for="q7c" class="option wrong">0</label>
+            <input type="radio" id="q7d" class="wrong" name="q7" value="d">
+            <label for="q7d" class="option wrong">Undefined</label>
+            <div class="wrongexplanation explanation"><p>This is incorrect. The pre-increment operator increments 'a' before printing it.</p></div>
+            <div class="correctexplanation explanation"><p>This is correct! The pre-increment operator increments 'a' to 6 before printing it.</p></div>
+        </div>
+
+        <!-- Question 8 -->
+        <div class="question">
+            <h2>8. Which of the following is a valid declaration of a constant in C++?</h2>
+            <input type="radio" id="q8a" class="correct" name="q8" value="a">
+            <label for="q8a" class="option correct">const int x = 10;</label>
+            <input type="radio" id="q8b" class="wrong" name="q8" value="b">
+            <label for="q8b" class="option wrong">int const x = 10;</label>
+            <input type="radio" id="q8c" class="wrong" name="q8" value="c">
+            <label for="q8c" class="option wrong">#define x 10</label>
+            <input type="radio" id="q8d" class="wrong" name="q8" value="d">
+            <label for="q8d" class="option wrong">static int x = 10;</label>
+            <div class="wrongexplanation explanation"><p>This is incorrect. The correct way to declare a constant in C++ is by using 'const' or 'const int'.</p></div>
+            <div class="correctexplanation explanation"><p>This is correct! 'const int x = 10;' correctly declares a constant integer.</p></div>
+        </div>
+
+        <!-- Question 9 -->
+        <div class="question">
+            <h2>9. What is the purpose of the 'virtual' keyword in C++?</h2>
+            <input type="radio" id="q9a" class="wrong" name="q9" value="a">
+            <label for="q9a" class="option wrong">To declare a virtual variable</label>
+            <input type="radio" id="q9b" class="correct" name="q9" value="b">
+            <label for="q9b" class="option correct">To declare a virtual function for polymorphism</label>
+            <input type="radio" id="q9c" class="wrong" name="q9" value="c">
+            <label for="q9c" class="option wrong">To allocate memory dynamically</label>
+            <input type="radio" id="q9d" class="wrong" name="q9" value="d">
+            <label for="q9d" class="option wrong">To create a virtual class</label>
+            <div class="wrongexplanation explanation"><p>This is incorrect. The 'virtual' keyword is used to enable runtime polymorphism in C++.</p></div>
+            <div class="correctexplanation explanation"><p>This is correct! The 'virtual' keyword is used to define virtual functions, allowing for dynamic dispatch and polymorphism.</p></div>
+        </div>
+
+        <!-- Question 10 -->
+        <div class="question">
+            <h2>10. What will be the output of the following C++ code?</h2>
+        <pre><code>
+ #include <iostream>
+ using namespace std;
+ int main() {
+     int a = 10;
+     int b = 3;
+     cout << a / b;
+     return 0;
+ }
+        </code></pre>
+            <input type="radio" id="q10a" class="wrong" name="q10" value="a">
+            <label for="q10a" class="option wrong">Base class display</label>
+            <input type="radio" id="q10b" class="correct" name="q10" value="b">
+            <label for="q10b" class="option correct">Derived class display</label>
+            <input type="radio" id="q10c" class="wrong" name="q10" value="c">
+            <label for="q10c" class="option wrong">Error</label>
+            <input type="radio" id="q10d" class="wrong" name="q10" value="d">
+            <label for="q10d" class="option wrong">Undefined Behavior</label>
+            <div class="wrongexplanation explanation"><p>This is incorrect. The virtual function mechanism will invoke the derived class function even when called through a base class pointer.</p></div>
+            <div class="correctexplanation explanation"><p>This is correct! The virtual function in the derived class is called because of dynamic dispatch.</p></div>
+        </div>
+
+        <!-- Question 11 -->
+        <div class="question">
+            <h2>11. What is the size of a pointer in C++?</h2>
+            <input type="radio" id="q11a" class="wrong" name="q11" value="a">
+            <label for="q11a" class="option wrong">1 byte</label>
+            <input type="radio" id="q11b" class="wrong" name="q11" value="b">
+            <label for="q11b" class="option wrong">2 bytes</label>
+            <input type="radio" id="q11c" class="correct" name="q11" value="c">
+            <label for="q11c" class="option correct">Depends on the system (typically 4 or 8 bytes)</label>
+            <input type="radio" id="q11d" class="wrong" name="q11" value="d">
+            <label for="q11d" class="option wrong">4 bytes</label>
+            <div class="wrongexplanation explanation"><p>This is incorrect. The size of a pointer depends on the system architecture.</p></div>
+            <div class="correctexplanation explanation"><p>This is correct! The size of a pointer depends on the architecture (typically 4 bytes for 32-bit systems and 8 bytes for 64-bit systems).</p></div>
+        </div>
+
+        <!-- Question 12 -->
+        <div class="question">
+            <h2>12. What is the output of the following code?</h2>
+        <pre><code>
+ #include <iostream>
+ using namespace std;
+ int main() {
+     int a = 10;
+     int b = 5;
+     cout << a % b;
+     return 0;
+ }
+        </code></pre>
+            <input type="radio" id="q12a" class="correct" name="q12" value="a">
+            <label for="q12a" class="option correct">0</label>
+            <input type="radio" id="q12b" class="wrong" name="q12" value="b">
+            <label for="q12b" class="option wrong">5</label>
+            <input type="radio" id="q12c" class="wrong" name="q12" value="c">
+            <label for="q12c" class="option wrong">10</label>
+            <input type="radio" id="q12d" class="wrong" name="q12" value="d">
+            <label for="q12d" class="option wrong">Error</label>
+            <div class="wrongexplanation explanation"><p>This is incorrect. The modulus operator returns the remainder of the division.</p></div>
+            <div class="correctexplanation explanation"><p>This is correct! 10 % 5 is 0 because the remainder when dividing 10 by 5 is 0.</p></div>
+        </div>
+
+        <!-- Question 13 -->
+        <div class="question">
+            <h2>13. What is a constructor in C++?</h2>
+            <input type="radio" id="q13a" class="wrong" name="q13" value="a">
+            <label for="q13a" class="option wrong">A function that is used to destroy objects</label>
+            <input type="radio" id="q13b" class="correct" name="q13" value="b">
+            <label for="q13b" class="option correct">A function that is called when an object is created</label>
+            <input type="radio" id="q13c" class="wrong" name="q13" value="c">
+            <label for="q13c" class="option wrong">A function used to call another function</label>
+            <input type="radio" id="q13d" class="wrong" name="q13" value="d">
+            <label for="q13d" class="option wrong">A function that is used to initialize variables</label>
+            <div class="wrongexplanation explanation"><p>This is incorrect. Constructors are special functions used to initialize an object when it's created.</p></div>
+            <div class="correctexplanation explanation"><p>This is correct! A constructor is called automatically when an object is created to initialize it.</p></div>
+        </div>
+
+        <!-- Question 14 -->
+        <div class="question">
+            <h2>14. What is the result of dividing by zero in C++?</h2>
+            <input type="radio" id="q14a" class="wrong" name="q14" value="a">
+            <label for="q14a" class="option wrong">Error: Division by zero is undefined</label>
+            <input type="radio" id="q14b" class="correct" name="q14" value="b">
+            <label for="q14b" class="option correct">Undefined behavior; the result is not predictable</label>
+            <input type="radio" id="q14c" class="wrong" name="q14" value="c">
+            <label for="q14c" class="option wrong">Infinity</label>
+            <input type="radio" id="q14d" class="wrong" name="q14" value="d">
+            <label for="q14d" class="option wrong">0</label>
+            <div class="wrongexplanation explanation"><p>This is incorrect. Division by zero causes undefined behavior in C++.</p></div>
+            <div class="correctexplanation explanation"><p>This is correct! Division by zero results in undefined behavior in C++.</p></div>
+        </div>
+
+        <!-- Question 15 -->
+        <div class="question">
+            <h2>15. How do you declare a pointer in C++?</h2>
+            <input type="radio" id="q15a" class="correct" name="q15" value="a">
+            <label for="q15a" class="option correct">int *ptr;</label>
+            <input type="radio" id="q15b" class="wrong" name="q15" value="b">
+            <label for="q15b" class="option wrong">int ptr*;</label>
+            <input type="radio" id="q15c" class="wrong" name="q15" value="c">
+            <label for="q15c" class="option wrong">int ptr;</label>
+            <input type="radio" id="q15d" class="wrong" name="q15" value="d">
+            <label for="q15d" class="option wrong">int *ptr[];</label>
+            <div class="wrongexplanation explanation"><p>This is incorrect. The correct syntax for declaring a pointer is 'type *name'.</p></div>
+            <div class="correctexplanation explanation"><p>This is correct! 'int *ptr;' is the correct syntax for declaring a pointer to an integer.</p></div>
+        </div>
+
+        <!-- Question 16 -->
+        <div class="question">
+            <h2>16. What is the purpose of the 'new' operator in C++?</h2>
+            <input type="radio" id="q16a" class="wrong" name="q16" value="a">
+            <label for="q16a" class="option wrong">To allocate memory statically</label>
+            <input type="radio" id="q16b" class="correct" name="q16" value="b">
+            <label for="q16b" class="option correct">To allocate memory dynamically</label>
+            <input type="radio" id="q16c" class="wrong" name="q16" value="c">
+            <label for="q16c" class="option wrong">To deallocate memory</label>
+            <input type="radio" id="q16d" class="wrong" name="q16" value="d">
+            <label for="q16d" class="option wrong">To initialize an object</label>
+            <div class="wrongexplanation explanation"><p>This is incorrect. The 'new' operator is used to allocate memory dynamically on the heap.</p></div>
+            <div class="correctexplanation explanation"><p>This is correct! The 'new' operator is used to allocate memory dynamically on the heap.</p></div>
+        </div>
+
+        <!-- Question 17 -->
+        <div class="question">
+            <h2>17. What is the output of the following code?</h2>
+        <pre><code>
+        #include <iostream>
+        using namespace std;
+        int main() {
+            int a = 10;
+            int b = 3;
+            cout << a / b;
+            return 0;
+        }
+            </code></pre>
+            <input type="radio" id="q17a" class="correct" name="q17" value="a">
+            <label for="q17a" class="option correct">3</label>
+            <input type="radio" id="q17b" class="wrong" name="q17" value="b">
+            <label for="q17b" class="option wrong">3.33</label>
+            <input type="radio" id="q17c" class="wrong" name="q17" value="c">
+            <label for="q17c" class="option wrong">Error</label>
+            <input type="radio" id="q17d" class="wrong" name="q17" value="d">
+            <label for="q17d" class="option wrong">Undefined</label>
+            <div class="wrongexplanation explanation"><p>This is incorrect. Since both 'a' and 'b' are integers, the division will result in an integer value.</p></div>
+            <div class="correctexplanation explanation"><p>This is correct! The division will result in 3 because it truncates the decimal part in integer division.</p></div>
+        </div>
+
+        <!-- Question 18 -->
+        <div class="question">
+            <h2>18. What will happen if a function does not return a value in C++?</h2>
+            <input type="radio" id="q18a" class="correct" name="q18" value="a">
+            <label for="q18a" class="option correct">It will cause undefined behavior</label>
+            <input type="radio" id="q18b" class="wrong" name="q18" value="b">
+            <label for="q18b" class="option wrong">The program will terminate immediately</label>
+            <input type="radio" id="q18c" class="wrong" name="q18" value="c">
+            <label for="q18c" class="option wrong">It will print a random value</label>
+            <input type="radio" id="q18d" class="wrong" name="q18" value="d">
+            <label for="q18d" class="option wrong">Nothing will happen</label>
+            <div class="wrongexplanation explanation"><p>This is incorrect. If a non-void function does not return a value, it leads to undefined behavior.</p></div>
+            <div class="correctexplanation explanation"><p>This is correct! A non-void function must return a value, and failing to do so results in undefined behavior.</p></div>
+        </div>
+    </main>
+
+    <!-- scroll among Questions -->
+    <div class="scrollQuestions">
+
+        <!-- Easy Level Questions -->
+        <div class="difficultyLevel">
+
+            <div class="easy">Easy</div>
+
+            <div class="questionNumbers">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+                <div>5</div>
+                <div>6</div>
+            </div>
+
+        </div>
+
+        <!-- Medium Level Questions -->
+        <div class="difficultyLevel">
+
+            <div class="medium">Medium</div>
+
+            <div class="questionNumbers">
+                <div>7</div>
+                <div>8</div>
+                <div>9</div>
+                <div>10</div>
+                <div>11</div>
+                <div>12</div>
+            </div>
+
+        </div>
+
+        <!-- Hard Level Questions -->
+        <div class="difficultyLevel">
+
+            <div class="hard">Hard</div>
+
+            <div class="questionNumbers">
+                <div>13</div>
+                <div>14</div>
+                <div>15</div>
+                <div>16</div>
+                <div>17</div>
+                <div>18</div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+</body>
+</html>
