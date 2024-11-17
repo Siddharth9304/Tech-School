@@ -600,6 +600,9 @@ header{
     #message{
         grid-column: 1/2;
     }
+    .socialMedia img{
+        margin-bottom: 20px;
+    }
     #links{
         flex-direction: column;
         gap: 80px;
